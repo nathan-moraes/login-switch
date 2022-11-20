@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <script type="text/javascript">
+
+        function Validardados(formClientes) {
+            if (formClientes.Nome.value == "") {
+                alert("Preencha seu nome.")
+                formClientes.Nome.focus()
+                return false
+            }
+            if (formClientes.senha.value == "") {
+                alert("insira uma senha.")
+                formClientes.Endereço.focus()
+                return false
+            }
+        
+            if (formClientes.email.value.indexOf("@") == -1 ||
+                formClientes.email.value.indexOf(".") == -1 ||
+                formClientes.email.value == "") {
+                alert("Preencha um E-Mail válido.")
+                formClientes.email.focus()
+                return false
+            }
+           
+            if (formClientes.Celular.value == "") {
+                alert("Preencha seu Celular.")
+                formClientes.Celular.focus()
+                return false
+            }
+            if (formClientes.Cpf.value == "") {
+                alert("Preencha seu CPF.")
+                formClientes.Cpf.focus()
+                return false
+
+            }
+          
+        }
+
+    </script>
+</head>
+<body>
+   
+
+    <div class="container">
+    <div class="card">
+    <div>
+    <h1>Cadastro</h1>
+        <section> 
+                <form action="formulario.html">
+                <!--NOME-->
+                <div class="label-float">
+                    <label  for="Nome"> </label>
+                    <input type="text" id="Nome" placeholder="Nome:" value="" size="50" />
+                </div>
+                <!--E-mail-->
+                <div class="label-float">
+                    <label for="email"></label>
+                    <input type="text" id="email" placeholder="E-Mail:" value="" size="50" />
+                </div>
+                <!--CELULAR-->
+                <div class="label-float">
+                    <label for="Senha"></label>
+                    <input type="password" id=senha placeholder="Senha:" value="" size="50" />
+                </div>
+                <!--CPF-->
+                <div class="label-float">
+                    <label for="Cpf"></label>
+                    <input type="text" id="Cpf" placeholder="CPF:" value="" size="50" />
+                </div>
+                <div class="justify-center">
+                <button type="button" name="Validar" value="Validar" onclick="Validardados(this.form)">Validar</button>
+                </div>
+            </form>
+            <p> Ja tem uma conta?
+                <a href="file:///C:/Users/natha/OneDrive/%C3%81rea%20de%20Trabalho/Safe%20harbor/Login.html"> Login </a> 
+            </p>
+        </section>   
+        </div> 
+    </div> 
+    <script src="C:/Users/natha/OneDrive/Área de Trabalho/Login-main-main/Login-main-main/Safe harbor/index.js">
+        
+    </script>
+
+</body>
+    
+
+ 
